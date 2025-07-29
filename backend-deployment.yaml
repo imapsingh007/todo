@@ -14,7 +14,7 @@ spec:
         app: backend
     spec:
       nodeSelector:
-        kubernetes.io/hostname: aks-agentpool-14870959-vmss000000
+        kubernetes.io/hostname: aks-agentpool-14870959-vmss000002
       containers:
       - name: backend
         image: apacr123.azurecr.io/backend:v1
