@@ -20,6 +20,12 @@ spec:
         image: apacr123.azurecr.io/backend:v1
         ports:
         - containerPort: 8000
+        env:
+        - name: CONNECTION_STRING
+          valueFrom:
+            secretKeyRef:
+              name: db-connection-secret
+              key: CONNECTION_STRING
 ---
 apiVersion: v1
 kind: Service
